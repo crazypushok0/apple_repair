@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  font-weight: 400;
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.header-logo {
+  max-width: 160px;
+}
+
+.header-menu-list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.header-menu-link::after {
+  content: '';
+  transition: all .2s;
+  display: block;
+  width: 100%;
+  background-color: #000;
+  height: 2px;
+  transform: translateY(2px) scale(0);
+}
+
+.header-menu-link:hover::after {
+  transform: translateY(2px) scale(1);
+}
+
+.header-location-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-location-item {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.header-location-item + .header-location-item {
+  margin-top: 10px;
+}
+
+.header-location-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background-image: url(../img/map-marker.svg);
+  width: 15px;
+  height: 18px;
+}
+
+.header-location-link::after {
+  content: '';
+  transition: all .2s;
+  display: block;
+  width: 100%;
+  background-color: #000;
+  height: 2px;
+  transform: translateY(2px) scale(0);
+}
+
+.header-location-link:hover::after {
+  transform: translateY(2px) scale(1);
+}
+
+.header-phone {
+  font-size: 18px;
+}
+
+.header-phone-link span {
+  font-weight: 700;
+}

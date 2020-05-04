@@ -1,0 +1,87 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+.header{
+	&-logo{
+		max-width: 160px;
+	}
+	&-menu {
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			font-size: 16px;
+		}
+
+		&-link {
+			&::after{
+				content: '';
+				transition: all .2s;
+				display: block;
+				width: 100%;
+				background-color: $dark-text;
+				height: 2px;
+				transform: translateY(2px) scale(0);
+			}
+			&:hover{
+				&::after{
+					transform: translateY(2px) scale(1);
+				}
+			}
+		}
+	}
+	// Menu end
+	&-location {
+		&-list {
+			display: flex;
+			justify-content: space-between;
+		}
+		&-box {
+			
+		}
+		&-item {
+			position: relative;
+			padding-left: 20px;
+			font-size: 14px;
+			& + &{
+				margin-top: 10px;
+			}
+			&::before{
+				content: '';
+				position: absolute;
+				left: 0;
+				background-image: url(../img/map-marker.svg);
+				width: 15px;
+				height: 18px;
+			}
+		}
+		&-link {
+			&::after{
+				content: '';
+				transition: all .2s;
+				display: block;
+				width: 100%;
+				background-color: $dark-text;
+				height: 2px;
+				transform: translateY(2px) scale(0);
+			}
+			&:hover{
+				&::after{
+					transform: translateY(2px) scale(1);
+				}
+			}
+		}
+	}
+	// Location end
+	&-phone {
+		font-size: 18px;
+		&-list {}
+		&-item {}
+		&-link {
+			span{
+				font-weight: 700;
+			}
+		}
+	}
+
+}
