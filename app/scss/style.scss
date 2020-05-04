@@ -2,7 +2,7 @@
 @import 'global';
 @import 'fonts';
 
-.header{
+.header-top{
 	&-logo{
 		max-width: 160px;
 	}
@@ -75,8 +75,6 @@
 	// Location end
 	&-phone {
 		font-size: 18px;
-		&-list {}
-		&-item {}
 		&-link {
 			span{
 				font-weight: 700;
@@ -84,4 +82,28 @@
 		}
 	}
 
+}
+.header-main{
+	margin-top: 20px;
+	background-color: #333;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	&-menu {}
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-item {
+
+	}
+	&-link {
+		display: flex;
+		align-items: center;
+	}
+	&-icon {
+		display: block;
+	}
+	&-text {}
 }
