@@ -13,7 +13,6 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #000;
   font-weight: 400;
-  padding-top: 20px;
   font-size: 16px;
 }
 
@@ -45,6 +44,42 @@ button:focus {
   outline: none;
 }
 
+.header-main .icon-iphone {
+  width: 50px;
+  background-position-y: -3px;
+}
+
+.header-main .icon-ipad {
+  width: 30px;
+  background-position-y: -2px;
+}
+
+.header-main .icon-iwatch {
+  width: 25px;
+  background-position-y: -1px;
+}
+
+.header-main .icon-macbook {
+  width: 60px;
+  background-position-y: -6px;
+}
+
+.header-main .icon-imac {
+  width: 48px;
+  background-position-y: -3px;
+}
+
+.header-main .icon-ipod {
+  width: 23px;
+  background-position-y: -5px;
+}
+
+header {
+  padding-top: 20px;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
 .header-top-logo {
   max-width: 160px;
 }
@@ -61,12 +96,12 @@ button:focus {
   display: block;
   width: 100%;
   background-color: #000;
-  height: 2px;
-  transform: translateY(2px) scale(0);
+  height: 1px;
+  transform: translateY(1px) scale(0);
 }
 
 .header-top-menu-link:hover::after {
-  transform: translateY(2px) scale(1);
+  transform: translateY(1px) scale(1);
 }
 
 .header-top-location-list {
@@ -99,12 +134,12 @@ button:focus {
   display: block;
   width: 100%;
   background-color: #000;
-  height: 2px;
-  transform: translateY(2px) scale(0);
+  height: 1px;
+  transform: translateY(1px) scale(0);
 }
 
 .header-top-location-link:hover::after {
-  transform: translateY(2px) scale(1);
+  transform: translateY(1px) scale(1);
 }
 
 .header-top-phone {
@@ -117,23 +152,109 @@ button:focus {
 
 .header-main {
   margin-top: 20px;
-  background-color: #333;
-  height: 64px;
+  background-color: #fff;
+  height: 80px;
   display: flex;
   align-items: center;
 }
 
+.header-main-menu {
+  max-height: 100%;
+}
+
 .header-main-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+}
+
+.header-main-item {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header-main-link {
   display: flex;
   align-items: center;
+  padding: 13px 0;
+  position: relative;
+}
+
+.header-main-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  height: 2px;
+  bottom: 2px;
+  transform: translateY(2px) scale(0);
+  transition: all .2s;
+}
+
+.header-main-link:hover::after {
+  transform: translateY(2px) scale(1);
 }
 
 .header-main-icon {
+  background-repeat: no-repeat;
+  height: 54px;
   display: block;
+  margin: 0 15px 0 0;
+}
+
+.header-main-text {
+  color: #000;
+}
+
+.header-main-text div {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.header-main-text strong {
+  font-size: 18px;
+}
+
+.megamenu {
+  display: none;
+  transition: all .2s;
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.1);
+}
+
+.megamenu__line {
+  margin: 20px 0;
+}
+
+.megamenu__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 68px;
+  transition: all .2s;
+  padding: 3px;
+}
+
+.megamenu__link + .megamenu__link {
+  margin-left: 10px;
+}
+
+.megamenu__link:hover {
+  box-shadow: inset -3px -6px 18px -4px rgba(0, 0, 0, 0.1);
+}
+
+.megamenu__img {
+  width: 30px;
+  height: 60px;
+}
+
+.megamenu__title {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
 }

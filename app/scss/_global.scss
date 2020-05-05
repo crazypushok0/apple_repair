@@ -11,8 +11,6 @@ body{
   @include Ubuntu;
   color:$dark-text;
   font-weight: 400;
-
-  padding-top: 20px;
   font-size: 16px;
 }
 a{
@@ -34,6 +32,34 @@ img{
 button{
   cursor: pointer;
   &:focus{
-  outline: none;
+    outline: none;
   }
 }  
+.header-main{
+  .icon{
+    &-iphone {
+     width:50px;
+     background-position-y: -3px ;
+    }
+    &-ipad {
+     width:30px;
+     background-position-y: -2px ;
+    }
+    &-iwatch {
+      width:25px;
+      background-position-y: -1px ;
+    }
+    &-macbook {
+      width:60px;
+      background-position-y: -6px ;
+    }
+    &-imac {
+      width:48px;
+      background-position-y: -3px ;
+    }
+    &-ipod {
+      width:23px;
+      background-position-y: -5px ;
+    }
+  }
+}
