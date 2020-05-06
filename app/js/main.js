@@ -1,11 +1,15 @@
 $(document).ready(function() {
 
-	$('#iphone').mouseenter(function(){ // Навели на ссылку?
+	$('.header-main-item').hover(function(){
+		$(this).children('.megamenu-item').stop(false , true).fadeIn(50);
+		$(this).children('.header-main-link').addClass('active');
 
-	      $( "#iphone + .megamenu" ).show(); // Показываем блок
-	   });
-	$("#iphone + .megamenu").mouseleave(function(event ){ // курсор ушел с ссылки?
-        event = event || window.event   // Не знаю что тут происходит
-			 $( "#iphone + .megamenu" ).hide();  // Скрываем блок
-      });
+
+	},function(){
+		$(this).children('.megamenu-item').stop(false , true).fadeOut(50);
+		$(this).children('.header-main-link').removeClass('active');
+	});
+
 });
+
+
