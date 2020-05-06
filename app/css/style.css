@@ -44,34 +44,10 @@ button:focus {
   outline: none;
 }
 
-.header-main .icon-iphone {
-  width: 50px;
-  background-position-y: -3px;
-}
-
-.header-main .icon-ipad {
-  width: 30px;
-  background-position-y: -2px;
-}
-
-.header-main .icon-iwatch {
-  width: 25px;
-  background-position-y: -1px;
-}
-
-.header-main .icon-macbook {
-  width: 60px;
-  background-position-y: -6px;
-}
-
-.header-main .icon-imac {
-  width: 48px;
-  background-position-y: -3px;
-}
-
-.header-main .icon-ipod {
-  width: 23px;
-  background-position-y: -5px;
+.btn {
+  background-color: rgba(0, 121, 214, 0.87);
+  color: #fff;
+  font-size: 15px;
 }
 
 @font-face {
@@ -217,7 +193,8 @@ header {
 
 .header-main-icon {
   background-repeat: no-repeat;
-  height: 54px;
+  width: 48px;
+  height: 48px;
   display: block;
   margin: 0 15px 0 0;
 }
@@ -283,6 +260,6 @@ header {
   margin-top: 7px;
   font-size: 13px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
 }

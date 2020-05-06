@@ -35,31 +35,9 @@ button{
     outline: none;
   }
 }  
-.header-main{
-  .icon{
-    &-iphone {
-     width:50px;
-     background-position-y: -3px ;
-    }
-    &-ipad {
-     width:30px;
-     background-position-y: -2px ;
-    }
-    &-iwatch {
-      width:25px;
-      background-position-y: -1px ;
-    }
-    &-macbook {
-      width:60px;
-      background-position-y: -6px ;
-    }
-    &-imac {
-      width:48px;
-      background-position-y: -3px ;
-    }
-    &-ipod {
-      width:23px;
-      background-position-y: -5px ;
-    }
+  .btn {
+    background-color: rgba(0, 121, 214, 0.87);
+    color:#fff;
+    font-size: 15px;
   }
-}
+  .btn-slider-banner {}
