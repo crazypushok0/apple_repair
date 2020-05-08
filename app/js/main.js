@@ -10,6 +10,10 @@ $(document).ready(function() {
 		$(this).children('.header-main-link').removeClass('active');
 	});
 
+
+	$('.slider__inner').slick({
+		arrows:false,
+	});
 });
 
 
