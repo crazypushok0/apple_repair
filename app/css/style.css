@@ -126,7 +126,7 @@ button:focus {
   font-style: normal;
 }
 
-header {
+.header {
   padding-top: 20px;
   position: relative;
   z-index: 3;
@@ -1135,7 +1135,7 @@ header {
 
 .repair__category {
   margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: flex;
 }
 
@@ -1203,4 +1203,103 @@ header {
 
 .repair__img-item.active {
   display: block;
+}
+
+.sale__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #277de2;
+  border: 8px solid #277de2;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 6px;
+  max-height: 160px;
+}
+
+.sale__text {
+  background-color: #fff;
+  font-size: 1.25rem;
+  padding: 20px 50px 20px 120px;
+  width: 60%;
+  position: relative;
+  line-height: 1.5;
+  border-radius: 6px;
+}
+
+.sale__text p {
+  margin: 0;
+}
+
+.sale__text span {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.sale__text::before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  background-image: url(../img/icon-sale/procente.png);
+  background-size: contain;
+}
+
+.sale__btn {
+  min-height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.75em;
+  padding: 80px 30px 0;
+  position: relative;
+}
+
+.sale__btn::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/icon-sale/click.svg);
+  background-size: contain;
+}
+
+.comments {
+  background-color: #c3c3c3;
+  padding: 20px 0;
+}
+
+.comments__title {
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.comments__item {
+  background-color: #fff;
+  width: 50%;
+  padding: 15px 20px;
+  border-radius: 6px;
+  height: 214px;
+}
+
+.comments__item-box {
+  display: flex;
+  align-items: center;
+}
+
+.comments__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
