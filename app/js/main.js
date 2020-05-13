@@ -59,6 +59,15 @@ $(document).ready(function() {
 		return false;
 	});
 
+		$('.comments__inner').slick({
+		arrows:true,
+		dots:true,
+		speed:600,
+		slidesToShow: 2,
+		infinite:false,
+		slidesToScroll:1,
+	});
+
 
 });
 
