@@ -45,7 +45,6 @@ $(document).ready(function() {
 
 	});
 
-
 	$('.repair .repair__category-btn').on('click', function(event) {
 		var id = $(this).attr('data-device');
 		var deviceName = $(this).attr('device-name');

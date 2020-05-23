@@ -72,14 +72,7 @@
 		z-index: 1;
 		background-position: 0 0;
 		&::after{
-			content: '';
-			position: absolute;
-			z-index: -1;
-			top:50%;
-			left: 50%;
-			width: 120%;
-			height: 50px;
-			transform:translate(-50%, -50%);
+			@include after;
 			background:url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-6.svg) center/100% no-repeat;
 		}
 
@@ -91,14 +84,7 @@
 		z-index: 1;
 		background-position:0 0;
 		&::after{
-			content: '';
-			position: absolute;
-			z-index: -1;
-			top: 50%;
-			left: 50%;
-			width: 120%;
-			height: 120%;
-			transform:translate(-50%, -50%);
+			@include after;
 			background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-7.svg) center/100% no-repeat;
 		}
 	}
@@ -157,16 +143,8 @@
 			font-weight: 400;
 			z-index: 1;
 			&::after{
-				content: '';
-				position: absolute;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-4.svg) center/100% no-repeat;
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				-webkit-transform: translate(-50%,-50%);
-				transform: translate(-50%,-50%);
+				@include after;
 			}
 		}
 		.ziplock-text {
@@ -176,15 +154,8 @@
 			z-index: 1;
 			font-weight: 400;
 			&::after{
-				content:'';
-				position: absolute;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-5.svg) center/100% no-repeat;
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 			}
 			.text-truncate{
 				overflow: hidden;
@@ -215,14 +186,7 @@
 			line-height: 1.5;
 			font-size: 1.75rem;
 			&::after{
-				position: absolute;
-				content:'';
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-3.svg) center/100% no-repeat;
 			}
 		}
@@ -236,14 +200,7 @@
 		.text-percent{
 			position: relative;
 			&::after{
-				position: absolute;
-				content:'';
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-num-category-1.svg) center/100% no-repeat;
 			}
 		}
@@ -265,14 +222,7 @@
 				color:$dark-text;
 				font-weight: 700;
 				&::after{
-					position: absolute;
-					content: '';
-					z-index: -1;
-					top: 50%;
-					left: 50%;
-					width: 120%;
-					height: 120%;
-					transform: translate(-50%,-50%);
+					@include after;
 					background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-year.svg) center/100% no-repeat;
 				}
 			}
@@ -335,14 +285,7 @@
 			position: relative;
 			z-index: 1;
 			&::after{
-				content: '';
-				position: absolute;
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-num-category-2.svg) center/100% no-repeat;
 			}
 		}
@@ -364,14 +307,7 @@
 			font-size: 1.25rem;
 			line-height: 1.5;
 			&::after{
-				position: absolute;
-				content:'';
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-gift.svg) center/100% no-repeat;
 			}
 		}
@@ -382,11 +318,9 @@
 			font-weight: 700;
 			line-height: 1.5;
 			background: 0 0;
-			&::before,&::after{
+			&::before{
 				position: absolute;
 				content:'';
-			}
-			&::before{
 				z-index: 1;
 				top: 50%;
 				right: calc(110% + .5rem);
@@ -396,12 +330,7 @@
 				transform: translateY(-50%);
 			}
 			&::after{
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-1.svg) center/100% no-repeat;
 			}
 		}
@@ -412,11 +341,9 @@
 			background: 0 0;
 			color:#fff;
 			font-weight: 700;
-			&::before,&::after{
+			&::before{
 				position: absolute;
 				content:'';
-			}
-			&::before{
 				z-index: 1;
 				top: 50%;
 				left: calc(110% + .5rem);
@@ -426,12 +353,7 @@
 				transform: translateY(-50%);
 			}
 			&::after{
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				width: 120%;
-				height: 120%;
-				transform: translate(-50%,-50%);
+				@include after;
 				background: url(../img/slider-banner/svg/fragments/text-bg/bg-text-service-2.svg) center/100% no-repeat;
 			}
 		}
